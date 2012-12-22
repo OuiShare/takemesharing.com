@@ -11,9 +11,12 @@ html(prefix='og: http://ogp.me/ns#')
     meta(property='og:description', content='One Click takes you to a random amazing website where you can share with others!')
 
     link(rel='stylesheet', type='text/css', href='/styles/screen.css')
+
     script !{partial('links.txt.coffee', feedr.feeds)}
     script(src='/scripts/main.js')
 
+    !{getBlock('scripts').toHTML()}
+
   body
     #content !{content}
-    |!{partial('piwik.html')}
+    !{partial('piwik.html')}
