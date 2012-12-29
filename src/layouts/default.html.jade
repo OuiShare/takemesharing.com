@@ -19,4 +19,8 @@ html(prefix='og: http://ogp.me/ns#')
 
   body
     #content !{content}
+    #footer
+      #follow !{partial('follow.html')}
+      #tweet !{partial('tweet.html')}
+
     !{partial('piwik.html')}
