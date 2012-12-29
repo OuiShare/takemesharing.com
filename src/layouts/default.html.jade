@@ -2,13 +2,13 @@ doctype 5
 html(prefix='og: http://ogp.me/ns#')
   head
     meta(charset='utf-8')
-    title Take me Sharing!
+    title #{site.title}
 
-    meta(property='og:title', content='Take me Sharing!')
-    meta(property='og:type', content='website')
-    meta(property='og:image', content='http://takemesharing.com/images/og.jpg')
-    meta(property='og:url', content='http://takemesharing.com/')
-    meta(property='og:description', content='One Click takes you to a random amazing website where you can share with others!')
+    meta(property='og:title', content="#{og.title}")
+    meta(property='og:type', content="#{og.type}")
+    meta(property='og:image', content="#{og.image}")
+    meta(property='og:url', content="#{og.url}")
+    meta(property='og:description', content="#{og.description}")
 
     link(rel='stylesheet', type='text/css', href='/styles/screen.css')
 
