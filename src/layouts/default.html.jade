@@ -13,6 +13,7 @@ html(prefix='og: http://ogp.me/ns#')
     link(rel='stylesheet', type='text/css', href='/styles/screen.css')
 
     script !{partial('links.txt.coffee', feedr.feeds)}
+    script !{partial('images.txt.coffee', images)}
     script(src='/scripts/main.js')
 
     !{getBlock('scripts').toHTML()}
