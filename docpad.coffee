@@ -23,7 +23,7 @@ module.exports =
     # landing - show by default
     # go: randomly chosen and shown when moving mouse over button
     images:
-      landing: 'http://takemesharing.com/images/startbg-1.jpg'
+      landing: 'https://farm3.staticflickr.com/2445/3839386942_b595cf5283_o.jpg'
       go: [
         'http://takemesharing.com/images/gobg-1.jpg'
         'http://takemesharing.com/images/gobg-2.jpg'
