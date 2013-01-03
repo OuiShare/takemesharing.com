@@ -21,9 +21,7 @@ html(prefix='og: http://ogp.me/ns#')
   body
     #content !{content}
     #footer
-      #left
-        |Take me sharing... cause I love it!! &mdash; by&nbsp;
-        a(href='http://ouishare.net') OuiShare
+      #left #{partial('footer.html.md')}
       #right
         #follow !{partial('follow.html')}
         #tweet !{partial('tweet.html')}
