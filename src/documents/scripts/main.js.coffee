@@ -1,6 +1,5 @@
 window.go = ->
-  luckyNumber = Math.floor(Math.random() * window.links.length)
-  window.location = window.links[luckyNumber]
+  window.location.reload()
 
 window.ready = ->
   luckyNumber = Math.floor(Math.random() * window.images.length)
@@ -10,8 +9,5 @@ window.notReady = ->
   document.body.style.backgroundImage = ""
 
 window.addEventListener 'load', ->
-
-  # preload images
-  for url in window.images
-    image = new Image()
-    image.src = url
+  luckyNumber = Math.floor(Math.random() * window.links.length)
+  document.getElementById('go').href = window.links[luckyNumber]
