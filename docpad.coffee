@@ -20,13 +20,10 @@ module.exports =
 
     # images to use for backgrounds
     # recomended dimension 1400x875
-    # landing - show by default
-    # go: randomly chosen and shown when moving mouse over button
-    images:
-      landing: 'https://farm3.staticflickr.com/2445/3839386942_b595cf5283_o.jpg'
-      go: [
-        'http://takemesharing.com/images/gobg-1.jpg'
-        'http://takemesharing.com/images/gobg-2.jpg'
-        'http://takemesharing.com/images/gobg-3.jpg'
-        'http://takemesharing.com/images/gobg-4.jpg'
-      ]
+    # randomly chosen and shown when moving mouse over button
+    images: [
+      'http://takemesharing.com/images/gobg-1.jpg'
+      'http://takemesharing.com/images/gobg-2.jpg'
+      'http://takemesharing.com/images/gobg-3.jpg'
+      'http://takemesharing.com/images/gobg-4.jpg'
+    ]

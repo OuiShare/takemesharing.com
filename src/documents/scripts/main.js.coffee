@@ -3,18 +3,15 @@ window.go = ->
   window.location = window.links[luckyNumber]
 
 window.ready = ->
-  luckyNumber = Math.floor(Math.random() * window.images.go.length)
-  document.body.style.backgroundImage = "url(#{window.images.go[luckyNumber]})"
+  luckyNumber = Math.floor(Math.random() * window.images.length)
+  document.body.style.backgroundImage = "url(#{window.images[luckyNumber]})"
 
 window.notReady = ->
-  document.body.style.backgroundImage = "url(#{window.images.landing})"
+  document.body.style.backgroundImage = ""
 
 window.addEventListener 'load', ->
 
   # preload images
-  for url in window.images.go
+  for url in window.images
     image = new Image()
     image.src = url
-
-  # set landing background
-  notReady()
